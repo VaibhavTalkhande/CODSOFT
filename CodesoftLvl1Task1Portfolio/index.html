@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Talkhande - Full Stack Developer</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-TvDRiQEH2B1FVjD9XoP7V2YkYb4xVZuot+zNCN7VvZW1ckTqj3q3i9kMGa/aYsGk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </span>
+    </nav>
+    <main>
+        <section id="about" class="about">
+            <h1>About me:</h1>
+            <div class="content">
+                <div class="image">
+                    <img src="developer.jpg" alt="Vaibhav Talkhande">
+                </div>
+                <div class="para">
+                    <p class="line__1">
+                        Hi, I am Vaibhav Talkhande
+                     </p>  
+                     <p class="line__2">
+                            Fullstack Web Developer
+                   
+                </div>
+            </div>
+                
+        </section>
+        <section id="skills" class="skills">
+            <h1>Skills</h1>
+            <ul>
+                <li><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="html"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=7gdY5qNXaKC0&format=png&color=000000" alt="css"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="javascript"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000" alt="React" > </li>
+                <li><img src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000" alt="nodejs"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=WoopfRcDj3RF&format=png&color=000000" alt="tailwindcss"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=17842&format=png&color=000000" alt="linux"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000" alt="ExpressJs"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=74402&format=png&color=000000" alt="MongoDb"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000" alt="postgresql"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=AU6Wc7r56Fxz&format=png&color=000000" alt="NextJs"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" alt="typescript"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" alt="aws"></li>
+                <li><img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="git"></li>
+            </ul>
+        </section>
+        <section id="education" class="education">
+            <h1>Education</h1>
+            <ul>
+                <li>
+                    <h3>Computer Science Engineering</h3>
+                    <p>2023-2026</p>
+                    <p>G.H. Raisoni Institute of Engineering and Technology, Nagpur</p>
+                    <button class="open-dialog" data-dialog="education-dialog-1">More Info</button>
+                    <dialog id="education-dialog-1">
+                        <h3>Computer Science Engineering</h3>
+                        <p>2023-2026</p>
+                        <p>G.H. Raisoni Institute of Engineering and Technology, Nagpur</p>
+                        <button class="close-dialog">Close</button>
+                    </dialog>
+                </li>
+                <li>
+                    <h3>HSC</h3>
+                    <p>2019-2022</p>
+                    <p>The Royal Gondwana Public School, Nagpur</p>
+                    <button class="open-dialog" data-dialog="education-dialog-2">More Info</button>
+                    <dialog id="education-dialog-2">
+                        <h3>HSC</h3>
+                        <p>2019-2022</p>
+                        <p>The Royal Gondwana Public School, Nagpur</p>
+                        <button class="close-dialog">Close</button>
+                    </dialog>
+                </li>
+                <li>
+                    <h3>SSC</h3>
+                    <p>2018-2019</p>
+                    <p>School of Scholars, Nagpur</p>
+                    <button class="open-dialog" data-dialog="education-dialog-3">More Info</button>
+                    <dialog id="education-dialog-3">
+                        <h3>SSC</h3>
+                        <p>2018-2019</p>
+                        <p>School of Scholars, Nagpur</p>
+                        <button class="close-dialog">Close</button>
+                    </dialog>
+                </li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <!-- <h3>Project 1</h3>
+                    <p>Insert a brief description of your project here.</p> -->
+                    <button class="open-dialog" data-dialog="project-dialog-1">More Info</button>
+                    <dialog id="project-dialog-1">
+                        <h3>Project 1</h3>
+                        <p>Insert a detailed description of your project here.</p>
+                        <button class="close-dialog">Close</button>
+                    </dialog>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>Insert a brief description of your project here.</p>
+                    <button class="open-dialog" data-dialog="project-dialog-2">More Info</button>
+                    <dialog id="project-dialog-2">
+                        <h3>Project 2</h3>
+                        <p>Insert a detailed description of your project here.</p>
+                        <button class="close-dialog">Close</button>
+                    </dialog>
+                </li>
+                <li>
+                    <h3>Project 3</h3>
+                    <p>Insert a brief description of your project here.</p>
+                    <button class="open-dialog" data-dialog="project-dialog-3">More Info</button>
+                    <dialog id="project-dialog-3">
+                        <h3>Project 3</h3>
+                        <p>Insert a detailed description of your project here.</p>
+                        <button class="close-dialog">Close</button>
+                    </dialog>
+                </li>
+            </ul>
+        </section>
+        <section class="Resume">
+            <h1>Resume</h1>
+            <a href="https://drive.google.com/file/d/1" target="_blank">Download Resume</a>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <div>
+                <a href="https://www.github.com/VaibhavTalkhande" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/vaibhav-talkhande-9a8b1b1b9/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/vaibhavtalkhande41/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/VaibhavT27" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <form action="mailto:vaibhavtalkhande41@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Vaibhav Talkhande. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
