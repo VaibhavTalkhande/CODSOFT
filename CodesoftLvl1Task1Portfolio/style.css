@@ -44,7 +44,12 @@ section {
   gap: 10px;
 }
 
-.about, .skills, .projects, .education, .contact, .Resume {
+.about,
+.skills,
+.projects,
+.education,
+.contact,
+.Resume {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +90,7 @@ section {
 }
 
 .image:hover {
-  transform: scale(1.0);
+  transform: scale(1);
 }
 
 .image img {
@@ -113,84 +118,126 @@ section {
     width: 100%;
     height: 100%;
   }
-  .para, .image {
+  .para,
+  .image {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .line__1, .line__2 {
+  .line__1,
+  .line__2 {
     font-size: 0.5rem;
-    animation: animated-text__1 6s steps(30, end) 1s 1 normal both, animated-cursor__1 900ms steps(30, end) 8;
+    animation:
+      animated-text__1 6s steps(30, end) 1s 1 normal both,
+      animated-cursor__1 900ms steps(30, end) 8;
   }
-  .about .content, .para, .image {
+  .about .content,
+  .para,
+  .image {
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
-  .about .content{
-    height:70vh;
+  .about .content {
+    height: 70vh;
   }
-  .navbar{
-    display:none;
+  .navbar {
+    display: none;
   }
 }
 
 /* Text Animation */
-.line__1, .line__2 {
+.line__1,
+.line__2 {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid rgba(17, 17, 17, 0.9);
 }
 
 .line__1 {
-  animation: animated-text__1 6s steps(30, end) 1s 1 normal both, animated-cursor__1 900ms steps(30, end) 8;
+  animation:
+    animated-text__1 6s steps(30, end) 1s 1 normal both,
+    animated-cursor__1 900ms steps(30, end) 8;
 }
 
 .line__2 {
-  animation: animated-text__2 5s steps(30, end) 1s 1 normal both, animated-cursor__2 900ms steps(30, end) infinite;
+  animation:
+    animated-text__2 5s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 900ms steps(30, end) infinite;
   animation-delay: 7s;
 }
 
 @keyframes animated-cursor__1 {
-  from { border-right-color: rgba(17, 17, 17, 0.9); }
-  to { border-right-color: rgba(255, 255, 255, 0.8); }
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 @keyframes animated-cursor__2 {
-  from { border-right-color: rgba(17, 17, 17, 0.9); }
-  to { border-right-color: rgba(255, 255, 255, 0.8); }
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 @keyframes animated-text__1 {
-  from { width: 0; }
-  to { width: 17rem; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 17rem;
+  }
 }
 
 @keyframes animated-text__2 {
-  from { width: 0; }
-  to { width: 16rem; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 16rem;
+  }
 }
 
 /* Section Headers */
-.about, #skills, #projects, #education, #contact, #experience, #Resume {
+.about,
+#skills,
+#projects,
+#education,
+#contact,
+#experience,
+#Resume {
   color: blueviolet;
 }
 
-#about h1, #skills h1, #projects h1, #education h1, #contact h1, #experience h1, #Resume h1 {
+#about h1,
+#skills h1,
+#projects h1,
+#education h1,
+#contact h1,
+#experience h1,
+#Resume h1 {
   color: blueviolet;
   text-align: left;
   width: 100%;
   margin-left: 0;
 }
 
-.about p, #contact form input, #contact form textarea {
+.about p,
+#contact form input,
+#contact form textarea {
   font-size: 18px;
   line-height: 1.5;
 }
 
 /* Skills and Education Styles */
-.skills ul, .education ul {
+.skills ul,
+.education ul {
   list-style: none;
   padding: 0;
   display: grid;
@@ -203,19 +250,24 @@ section {
 }
 
 @media screen and (max-width: 720px) {
-  .skills{
+  .skills {
     height: 100vh;
   }
-  .skills ul { grid-template-columns: repeat(3, 1fr); gap: 5%; }
+  .skills ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+  }
 }
 
-.education ul, .projects ul {
+.education ul,
+.projects ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.education li, .projects li {
+.education li,
+.projects li {
   align-items: center;
   padding: 2rem;
   opacity: 0.8;
@@ -259,7 +311,7 @@ section {
 
 .project-link {
   background: inherit;
-  height:2.5rem;
+  height: 2.5rem;
   width: 50%;
   border-radius: 0.5rem;
   display: flex;
@@ -269,40 +321,44 @@ section {
 }
 
 @media screen and (max-width: 780px) {
-  .skills{
-    padding-top:0;
+  .skills {
+    padding-top: 0;
   }
-  .skills ul,.education li{
+  .skills ul,
+  .education li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: .1rem;
+    gap: 0.1rem;
   }
-  .skills li{
-  
+  .skills li {
     padding: 0;
-    margin:0;
+    margin: 0;
   }
-  .skills li img{
+  .skills li img {
     width: 100%;
     height: 100%;
   }
-.projects li, .education li {
+  .projects li,
+  .education li {
     padding: 1rem;
     margin: 0.5rem;
     width: 100%;
-    height:60%;
+    height: 60%;
   }
 }
 
-.skills li:hover, .projects li:hover, .education li:hover {
+.skills li:hover,
+.projects li:hover,
+.education li:hover {
   transform: scale(1.1);
 }
 
 /* Button Styles */
-button, .close-dialog {
+button,
+.close-dialog {
   background-color: blueviolet;
   color: white;
   font-weight: bold;
@@ -321,7 +377,9 @@ button, .close-dialog {
 }
 
 @media screen and (max-width: 480px) {
-  .close-dialog { width: 20%; }
+  .close-dialog {
+    width: 20%;
+  }
 }
 
 /* Dialog Styles */
@@ -337,7 +395,7 @@ dialog {
   gap: 20px;
   position: fixed;
   z-index: 100;
-  text-align:center;
+  text-align: center;
   justify-content: center;
   align-items: center;
   border: 1px solid blueviolet;
@@ -345,7 +403,10 @@ dialog {
 }
 
 @media screen and (max-width: 480px) {
-  dialog { width: 80%; height: 50%; }
+  dialog {
+    width: 80%;
+    height: 50%;
+  }
 }
 
 /* Resume Styles */
@@ -379,16 +440,32 @@ dialog {
 }
 
 @media screen and (max-width: 720px) {
-  .Resume a { width: 100%; }
-  .Resume button { width: 80%; }
+  .Resume a {
+    width: 100%;
+  }
+  .Resume button {
+    width: 80%;
+  }
 }
 
 /* Contact Section */
 #contact form {
-  width: 50%;
+  margin-top: 10px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  color: blueviolet;
+  text-align: left;
+  width: 100%;
+  margin-left: 0;
 }
 
-#contact form input, #contact form textarea {
+#contact form input,
+#contact form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -399,13 +476,15 @@ dialog {
 #contact form button {
   background-color: blueviolet;
   color: #fff;
-  padding: 10px;
+  padding: 1px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  height: 4rem;
-  transition: background-color 0.3s, color 0.3s;
+  width: 80%;
+  height: 2em;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 #contact form button:hover {
@@ -424,7 +503,8 @@ dialog {
 }
 
 .contact i:hover {
-  color: #000;
+  color: blueviolet;
+  scale: 1.5;
 }
 
 /* Footer Styles */
@@ -437,16 +517,32 @@ dialog {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-50px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(50px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
