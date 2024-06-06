@@ -8,7 +8,29 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-TvDRiQEH2B1FVjD9XoP7V2YkYb4xVZuot+zNCN7VvZW1ckTqj3q3i9kMGa/aYsGk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "gMlnNNHMIZVK95Lui",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_gt7ygil', 'template_j8zivrg', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -19,7 +41,7 @@
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
+            <a href="#Resume">Resume</a>
             <a href="#contact">Contact</a>
         </span>
     </nav>
@@ -65,38 +87,32 @@
             <h1>Education</h1>
             <ul>
                 <li>
-                    <h3>Computer Science Engineering</h3>
+                    <h3>Computer Science Engineering (B.Tech)</h3>
                     <p>2023-2026</p>
                     <p>G.H. Raisoni Institute of Engineering and Technology, Nagpur</p>
                     <button class="open-dialog" data-dialog="education-dialog-1">More Info</button>
                     <dialog id="education-dialog-1">
-                        <h3>Computer Science Engineering</h3>
-                        <p>2023-2026</p>
-                        <p>G.H. Raisoni Institute of Engineering and Technology, Nagpur</p>
+                        <h3>8.78 CGPA</h3>
                         <button class="close-dialog">Close</button>
                     </dialog>
                 </li>
                 <li>
-                    <h3>HSC</h3>
-                    <p>2019-2022</p>
+                    <h3>HSC (CBSE)</h3>
+                    <p>2020-2021</p>
                     <p>The Royal Gondwana Public School, Nagpur</p>
                     <button class="open-dialog" data-dialog="education-dialog-2">More Info</button>
                     <dialog id="education-dialog-2">
-                        <h3>HSC</h3>
-                        <p>2019-2022</p>
-                        <p>The Royal Gondwana Public School, Nagpur</p>
+                        <h3>86.5%</h3>
                         <button class="close-dialog">Close</button>
                     </dialog>
                 </li>
                 <li>
-                    <h3>SSC</h3>
+                    <h3>SSC (CBSE)</h3>
                     <p>2018-2019</p>
                     <p>School of Scholars, Nagpur</p>
                     <button class="open-dialog" data-dialog="education-dialog-3">More Info</button>
                     <dialog id="education-dialog-3">
-                        <h3>SSC</h3>
-                        <p>2018-2019</p>
-                        <p>School of Scholars, Nagpur</p>
+                        <h3>90%</h3>
                         <button class="close-dialog">Close</button>
                     </dialog>
                 </li>
@@ -106,40 +122,54 @@
             <h1>Projects</h1>
             <ul>
                 <li>
-                    <!-- <h3>Project 1</h3>
-                    <p>Insert a brief description of your project here.</p> -->
+                    <img src="./project1.png" alt="NOTECODE">
                     <button class="open-dialog" data-dialog="project-dialog-1">More Info</button>
                     <dialog id="project-dialog-1">
-                        <h3>Project 1</h3>
-                        <p>Insert a detailed description of your project here.</p>
-                        <button class="close-dialog">Close</button>
+                        <h3>NOTECODE</h3>
+                        <p>NOTECODE-A NOTEBOOK FOR CODERS</p>
+                        <div class="modal-project">
+                            <a href="https://github.com/VAIBHAVTALKHANDE/NOTECODE" >
+                                <button class="project-link"><img class="github" src="https://img.icons8.com/?size=50&id=12599&format=png&color=000000" alt="project-link"></button>
+                            </a>
+                            <button class="close-dialog">Close</button>
+                        </div>
                     </dialog>
                 </li>
                 <li>
-                    <h3>Project 2</h3>
-                    <p>Insert a brief description of your project here.</p>
+                    <img src="./project2.png" alt="URLSHORTNER">
                     <button class="open-dialog" data-dialog="project-dialog-2">More Info</button>
                     <dialog id="project-dialog-2">
-                        <h3>Project 2</h3>
-                        <p>Insert a detailed description of your project here.</p>
-                        <button class="close-dialog">Close</button>
+                        <h3>URL SHORTNER</h3>
+                        <p>URLSHORTNER - A URL SHORTENER WITH ANALYTICS</p>
+                        <div class="modal-project">
+                            <a href="https://github.com/VAIBHAVTALKHANDE/URLSHORTNER" >
+                                <button class="project-link"><img class="github" src="https://img.icons8.com/?size=50&id=12599&format=png&color=000000" alt="project-link"></button>
+                            </a>
+                            <button class="close-dialog">Close</button>
+                        </div>
                     </dialog>
                 </li>
                 <li>
-                    <h3>Project 3</h3>
-                    <p>Insert a brief description of your project here.</p>
+                    <img src="./project3.png" alt="PixelCraftAi">
                     <button class="open-dialog" data-dialog="project-dialog-3">More Info</button>
                     <dialog id="project-dialog-3">
-                        <h3>Project 3</h3>
-                        <p>Insert a detailed description of your project here.</p>
-                        <button class="close-dialog">Close</button>
+                        <h3>PixelCraftAi</h3>
+                        <p>PixelCraftAi is fullstack(mern) image generator platform powered by OPENAI</p>
+                        <div class="modal-project">
+                            <a href="https://github.com/VAIBHAVTALKHANDE/PIXELCRAFTAI" >
+                                <button class="project-link"><img class="github" src="https://img.icons8.com/?size=50&id=12599&format=png&color=000000" alt="project-link"></button>
+                            </a>
+                            <button class="close-dialog">Close</button>
+                        </div>
                     </dialog>
                 </li>
             </ul>
         </section>
-        <section class="Resume">
+        <section class="Resume" id="Resume">
             <h1>Resume</h1>
-            <a href="https://drive.google.com/file/d/1" target="_blank">Download Resume</a>
+            <a href="./VaibhavTalkhandeResume.pdf" target="_blank" download="VaibhavTalkhandeResume">
+                <button><img src="https://img.icons8.com/?size=100&id=86327&format=png&color=000000"></button>
+            </a>
         </section>
         <section id="contact" class="contact">
             <h1>Contact Me</h1>
@@ -149,14 +179,14 @@
                 <a href="https://www.instagram.com/vaibhavtalkhande41/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/VaibhavT27" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
             </div>
-            <form action="mailto:vaibhavtalkhande41@gmail.com" method="POST">
+            <form id="contact-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="from_name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="from_email" required>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <input type="submit" value="Send">
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
             </form>
         </section>
     </main>
