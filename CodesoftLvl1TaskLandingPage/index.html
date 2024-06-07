@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neev Earth Saving NGO</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./logo.png"><h2>neev</h2></div>
+        <div class="nav-link"> 
+            <button id="menu-btn">
+                    menu
+                </button>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+    </header>
+    <section id="hero">
+        <h2>Join Us in Saving the Earth</h2>
+        <p>Together, we can make a difference.</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <i>Neev NGO is dedicated to protecting the environment through various sustainable projects and initiatives.</i>
+    </section>
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project">
+            <h3>Tree Plantation</h3>
+            <i>Planting trees to restore our forests and improve air quality.</i>
+        </div>
+        <div class="project">
+            <h3>Clean Water Initiative</h3>
+            <i>Providing access to clean and safe drinking water in rural areas.</i>
+        </div>
+        <div class="project">
+            <h3>Recycling Program</h3>
+            <i>Promoting recycling to reduce waste and conserve natural resources.</p>
+        </div>
+    </section>
+    <section id="volunteer">
+        <h2>Volunteer with Us</h2>
+        <p>Become a part of our mission to save the Earth. Your support can make a huge difference.</p>
+        <button onclick="scrollToSection('contact')">Get in Touch</button>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Neev NGO. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

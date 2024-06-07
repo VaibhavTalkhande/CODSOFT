@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50; /
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding:1rem;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.nav-link {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height:100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:10%;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size:1rem;
+    text-decoration: none;
+}
+
+#menu-btn {
+    display: none;
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image.png') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#hero button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    background:rgb(226, 199, 122);
+}
+#volunteer button{
+    border-radius:0.2rem;
+    border:none;
+    padding:1rem;
+    background:#4CAF50;
+    color:white;
+    font-weight:bold;
+}
+#projects{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.project {
+    margin-bottom: 2rem;
+    background:rgba(255,255,255,0.5);
+    width:50%;
+    padding:10px;
+    border-radius:1rem;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius:.5rem;
+    border:none;
+}
+
+#contactForm button {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        position: absolute;
+        top:30%;
+        right: 10%;
+        height: 2.5rem;
+        width: 50%;
+    }
+
+    #menu-btn {
+        display: flex;
+        top: 0px;
+        margin: 0;
+        z-index: 1;
+        
+    }
+    header{
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        
+    }
+    
+    #navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        height: 3rem;
+    }
+    .nav-link {
+        display:none;
+    }
+    .logo {
+        padding: 0;
+        position: relative;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    #hero button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #contactForm {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
