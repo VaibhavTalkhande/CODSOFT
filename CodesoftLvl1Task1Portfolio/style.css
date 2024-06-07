@@ -8,7 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: center;
@@ -36,7 +35,6 @@ body {
   color: black;
 }
 
-/* Section Styles */
 section {
   display: block;
   border-radius: 5px;
@@ -111,7 +109,6 @@ section {
   padding: 1rem;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .about .content {
     flex-direction: column;
@@ -147,7 +144,6 @@ section {
   }
 }
 
-/* Text Animation */
 .line__1,
 .line__2 {
   white-space: nowrap;
@@ -203,8 +199,6 @@ section {
     width: 16rem;
   }
 }
-
-/* Section Headers */
 .about,
 #skills,
 #projects,
@@ -235,7 +229,6 @@ section {
   line-height: 1.5;
 }
 
-/* Skills and Education Styles */
 .skills ul,
 .education ul {
   list-style: none;
@@ -257,6 +250,9 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
   }
+  .projects li,{
+    width:80%;
+  }
 }
 
 .education ul,
@@ -275,7 +271,7 @@ section {
   border-radius: 0.5rem;
   height: 20rem;
   gap: 1rem;
-  width: 25%;
+  width: 25rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -356,7 +352,6 @@ section {
   transform: scale(1.1);
 }
 
-/* Button Styles */
 button,
 .close-dialog {
   background-color: blueviolet;
@@ -382,7 +377,6 @@ button,
   }
 }
 
-/* Dialog Styles */
 dialog {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
@@ -409,7 +403,6 @@ dialog {
   }
 }
 
-/* Resume Styles */
 .Resume a {
   height: 10%;
   width: 20%;
@@ -448,7 +441,6 @@ dialog {
   }
 }
 
-/* Contact Section */
 #contact form {
   margin-top: 10px;
   width: 20%;
@@ -507,7 +499,6 @@ label{
   scale: 1.5;
 }
 
-/* Footer Styles */
 .footer {
   background-color: blueviolet;
   color: #fff;
@@ -515,7 +506,7 @@ label{
   padding: 10px 0;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
