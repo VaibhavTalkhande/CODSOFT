@@ -24,9 +24,11 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_gt7ygil', 'template_j8zivrg', this)
                     .then(() => {
-                        console.log('SUCCESS!');
+                        alert('mail sent successfully');
+                        clearform();
                     }, (error) => {
-                        console.log('FAILED...', error);
+                        alert('FAILED...', error);
+                        console.log(error);
                     });
             });
         }
@@ -129,7 +131,7 @@
                         <p>NOTECODE-A NOTEBOOK FOR CODERS</p>
                         <div class="modal-project">
                             <a href="https://github.com/VAIBHAVTALKHANDE/NOTECODE" >
-                                <button class="project-link"><img class="github" src="https://img.icons8.com/?size=50&id=12599&format=png&color=000000" alt="project-link"></button>
+                                <button class="project-link"><h4>Link</h4></button>
                             </a>
                             <button class="close-dialog">Close</button>
                         </div>
@@ -143,7 +145,7 @@
                         <p>URLSHORTNER - A URL SHORTENER WITH ANALYTICS</p>
                         <div class="modal-project">
                             <a href="https://github.com/VAIBHAVTALKHANDE/URLSHORTNER" >
-                                <button class="project-link"><img class="github" src="https://img.icons8.com/?size=50&id=12599&format=png&color=000000" alt="project-link"></button>
+                                <button class="project-link"><h4>Link</h4></button>
                             </a>
                             <button class="close-dialog">Close</button>
                         </div>
@@ -157,7 +159,7 @@
                         <p>PixelCraftAi is fullstack(mern) image generator platform powered by OPENAI</p>
                         <div class="modal-project">
                             <a href="https://github.com/VAIBHAVTALKHANDE/PIXELCRAFTAI" >
-                                <button class="project-link"><img class="github" src="https://img.icons8.com/?size=50&id=12599&format=png&color=000000" alt="project-link"></button>
+                                <button class="project-link"><h4>Link</h4></button>
                             </a>
                             <button class="close-dialog">Close</button>
                         </div>
@@ -182,7 +184,7 @@
                 </div>
                 <h3>vaibhavtalkhande41@gmail.com</h3>
             </div>
-            <form id="contact-form">
+            <form id="contact-form" >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="from_name" required>
                 <label for="email">Email:</label>
